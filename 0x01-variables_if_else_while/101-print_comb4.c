@@ -7,7 +7,7 @@ int main(void)
 {
 	int a = 48, b, c;
 
-	for (;a <= 57; a++)
+	for (; a <= 57; a++)
 	{
 		b = a + 1;
 		for (; b <= 57; b++)
@@ -18,7 +18,7 @@ int main(void)
 				putchar(a);
 				putchar(b);
 				putchar(c);
-				
+
 				if (a != 55)
 				{
 					putchar(',');
