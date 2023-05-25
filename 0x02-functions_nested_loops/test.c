@@ -2,8 +2,11 @@
 #include "main.h"
 int main(void)
 {
-	char g = 'h';
-	_putchar(g);
-	_putchar(98);
+	int n = -10;
+	for (; n <= 10; n++)
+	{
+		putchar(n + '0');
+	}
+	_putchar('\n');
 return (0);
 }
