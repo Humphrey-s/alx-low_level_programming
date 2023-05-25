@@ -23,7 +23,14 @@ int main(void)
 	}
 	else
 	{
-		printf("%d ", a);
+		if (a != 100)
+		{
+			printf("%d ", a);
+		}
+		else
+		{
+			printf("%d", a);
+		}
 	}
 	}
 	printf("\n");
