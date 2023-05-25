@@ -6,10 +6,10 @@
  */
 void print_line(int n)
 {
-	if (n < 1)
+	if (n <= 0)
 	{
 	}
-	else if (n >= 1)
+	else if (n > 0)
 	{
 	for (; n > 0; n--)
 	{
