@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_line - print lines according to n
- * @n: length of line
+ * print_diagonal - print diagonal
+ * @n: length of diagonal or number of _
  * Return: (Success)
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int a;
+	int a, b;
 
 	if (n <= 0)
 	{
@@ -16,8 +16,7 @@ void print_line(int n)
 	{
 	for (a = 0; a < n; a++)
 	{
-		_putchar(95);
 	}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
