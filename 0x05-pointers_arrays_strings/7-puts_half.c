@@ -13,7 +13,7 @@ void puts_half(char *str)
 		str++;
 		b++;
 	}
-	if (b % 3 != 0)
+	if (b % 3 != 0 && b != 0)
 	{
 		n = (b - 1) / 2;
 
