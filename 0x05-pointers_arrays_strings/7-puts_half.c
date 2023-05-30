@@ -16,7 +16,6 @@ void puts_half(char *str)
 	if (b % 3 != 0)
 	{
 		n = (b - 1) / 2;
-		n = n - 2;
 
 		for (; n <= b; n++)
 		{
@@ -26,7 +25,6 @@ void puts_half(char *str)
 	else if (b % 2  == 0)
 	{
 		n = b / 2;
-		n = n - 2;
 
 	for (; n <= b; n++)
 	{
