@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - print array
  * @a: pointer to array
@@ -7,12 +8,16 @@
  */
 void print_array(int *a, int n)
 {
-	int b;
+	int b = 0;
+	int c = n - 1;
 
-	for (b = 0; b <= n; b++)
+	for (; b <= c; b++)
 	{
-		_putchar(a[b]);
-		_putchar(',');
+		printf("%d", *a++);
+		if (b != c)
+		{
+		printf(", ");
+		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
