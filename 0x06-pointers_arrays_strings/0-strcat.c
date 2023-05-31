@@ -11,19 +11,16 @@ char *_strcat(char *dest, char *src)
 
 	char *p;
 
-
-	for (a = 0; dest[a] != '\0'; a++)
-	{
-		dest++;
-	}
 	p = dest;
-	p++;
-	p++;
-	p++;
+
+	for (a = 0; p[a] != '\0'; a++)
+	{
+	}
+	a = a + 1;
 	for (b = 0; src[b] != '\0'; b++)
 	{
-		*p++ = *src++;
+		*(p + a + b) = *(src + b);
 	}
-	*p = '\0';
+	*(p + a + b + 1) = '\0';
 return (dest);
 }
