@@ -28,7 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 		c = a - n;
 	for (; src[c]; c++)
 	{
-		*(p + b + c) = '\0';
+		*(p + b + c + 1) = '\0';
 	}
 	}
 return (dest);
