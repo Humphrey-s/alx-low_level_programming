@@ -15,16 +15,5 @@ int _strcmp(char *s1, char *s2)
 	for (b = 0; s2[b] != '\0'; b++)
 	{
 	}
-	if (a > b)
-	{
-		return (15);
-	}
-	else if (a < b)
-	{
-		return (-15);
-	}
-	else
-	{
-		return (0);
-	}
+	return (a - b);
 }
