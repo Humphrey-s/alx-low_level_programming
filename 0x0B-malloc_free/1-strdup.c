@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * _strdup - puts a copy of a string in a newly allocated memory
  * @str: string
@@ -16,13 +16,11 @@ char *_strdup(char *str)
 	b = strlen(str);
 	p = malloc(sizeof(char) * b);
 
-	if (p == NULL)
+	if ((p == NULL) || (str == NULL))
 	{
 	return (NULL);
 	}
-	else if (str == NULL)
-	{
-	return (NULL);
+	else
 	{
 	strncpy(p, str, b);
 	return (p);
