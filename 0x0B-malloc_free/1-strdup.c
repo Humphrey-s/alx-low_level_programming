@@ -16,13 +16,14 @@ char *_strdup(char *str)
 	b = strlen(str);
 	p = malloc(sizeof(char) * b);
 
-	if ((p == NULL) || (str == NULL))
+	if (p == NULL)
 	{
 	return (NULL);
 	}
 	else
 	{
 	strncpy(p, str, b);
+
 	return (p);
 	}
 }
