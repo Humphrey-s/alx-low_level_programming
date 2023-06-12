@@ -21,6 +21,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
+	ptr = malloc(sizeof(unsigned int) * size);
 	memset(ptr, c, size);
 
 	return (ptr);
