@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 {
 	char *ptr;
 
-	ptr = malloc(sizeof(int) * size);
+	ptr = malloc(sizeof(char) * size);
 
 	if (size == 0)
 	{
@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-	ptr = malloc(sizeof(unsigned int) * size);
+	ptr = malloc(sizeof(char) * size);
 	memset(ptr, c, size);
 
 	return (ptr);
