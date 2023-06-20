@@ -45,14 +45,14 @@ void print_dog(struct dog *d)
 	printf("Name: %s\n", d->name);
 	free(ptr1);
 	}
-	if (ptr2 != NULL)
-	{
-	printf("Owner: %s\n", d->owner);
-	free(ptr2);
-	}
 	if (ptr3 != NULL)
 	{
 	printf("Age: %f\n", d->age);
+	free(ptr2);
+	}
+	if (ptr2 != NULL)
+	{
+	printf("Owner: %s\n", d->owner);
 	free(ptr3);
 	}
 	}
