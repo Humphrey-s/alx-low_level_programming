@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 	if ((argc < 3) || (argc > 4))
 	{
 	printf("error\n");
+	exit (98);
 	}
 	else
 	{
