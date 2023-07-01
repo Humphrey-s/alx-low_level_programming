@@ -30,4 +30,5 @@ int main(void)
     printf("-> %lu elements\n", n);
     free(new->str);
     free(new);
-
+return (0);
+}
