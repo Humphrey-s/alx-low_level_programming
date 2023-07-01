@@ -4,8 +4,8 @@
 #include <unistd.h>
 #include <string.h>
 /**
- * add_node_end - add node to beginning of a list
- * @head - pointer to beginning of a node
+ * add_node - add node to beginning of a list
+ * @head: pointer to beginning of a node
  * @str: string
  * Return: (Success)
  */
@@ -20,13 +20,15 @@ list_t *add_node(list_t **head, const char *str)
 
 	*head = new;
 
-	if (head == NULL)
+	if ((head == NULL) || (new = NULL))
 	{
 		free(new);
+		free(*head);
 		return (NULL);
 	}
 	else
 	{
+		free(new);
 		return (*head);
 	}
 }
