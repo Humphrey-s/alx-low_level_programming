@@ -15,6 +15,12 @@ unsigned int binary_to_uint(const char *b)
 	int bnum = atoi(b);
 	unsigned int num = 0;
 
+	if ((b == NULL) || (b[0] < '0' && b[0] > '1'))
+	{
+		return (0);
+	}
+	else
+	{
 	while (bnum != 0)
 	{
 		a = bnum % 10;
@@ -23,6 +29,7 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	}
 	return (num);
+	}
 }
 
 #include "main.h"
