@@ -23,11 +23,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		fd = fopen(filename, "r");
 
+		if (fd == NULL)
+		{
+		return (0);
+		}
+		else
+		{
 		fread(&BUFF, letters, 1, fd);
 
 		i = write(1, &BUFF, letters);
 	
 		fclose(fd);
+		
 		if (i < 0)
 		{
 			return (0);
@@ -35,6 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		else
 		{
 			return (letters);
+		}
 		}
 	}
 }
