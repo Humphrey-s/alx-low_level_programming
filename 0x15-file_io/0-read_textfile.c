@@ -32,9 +32,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fread(&BUFF, letters, 1, fd);
 
 		i = write(1, &BUFF, letters);
-	
+
 		fclose(fd);
-		
+
 		if (i < 0)
 		{
 			return (0);
