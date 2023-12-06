@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "hash_tables.h"
 /**
- * key_index - generate index where string is to be stored 
+ * key_index - generate index where string is to be stored
  * @key: key
  * @size: size of hash_table
  * Return: returns index where string is stored or is to be stored

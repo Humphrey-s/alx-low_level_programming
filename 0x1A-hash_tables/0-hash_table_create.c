@@ -5,7 +5,7 @@
 /**
  * hash_table_create - vcreate hash table
  * @size: size of array
- * Return: Return 
+ * Return: Return
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
