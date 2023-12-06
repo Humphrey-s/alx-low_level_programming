@@ -3,7 +3,7 @@
 #include <string.h>
 #include "hash_tables.h"
 /**
- * hash_table_get - retrieves values from hash table 
+ * hash_table_get - retrieves values from hash table
  * @ht: hash table
  * @key: key
  * Return: return values based on keys
