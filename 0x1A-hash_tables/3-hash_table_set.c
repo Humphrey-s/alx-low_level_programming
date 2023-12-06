@@ -11,19 +11,23 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, UNUSED const char *value)
 {
-	UNUSED uli index = key_index((unsigned char *)key, ht->size);
-	UNUSED char *s_key = (char *)key, *s_value = (char *)value;
-	UNUSED hash_node_t *node;
-	hash_node_t *ptr = ht->array[index];
+	UNUSED uli index;
+	UNUSED char *s_key, *s_value;
+	UNUSED hash_node_t *node, *ptr;
 
 	if ((strlen(key) == 0) || (key == NULL) || (ht == NULL))
 		return (0);
 
 	node = malloc(sizeof(hash_node_t));
 
+	s_key = (char *)key;
+	s_value = (char *)value;
+	index = key_index((unsigned char *)key, ht->size);
+
 	if (node == NULL)
 		return (0);
 
+	ptr = ht->array[index];
 	node->key = s_key;
 	node->value = s_value;
 
