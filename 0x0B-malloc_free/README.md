@@ -1,0 +1,1 @@
+all about memmory malloc
