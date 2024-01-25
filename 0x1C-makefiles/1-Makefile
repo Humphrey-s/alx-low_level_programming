@@ -2,8 +2,8 @@ CC := gcc
 SRC := $(wildcard *.c)
 obj := $(SRC:%.c=%.o)
 
-all: $(obj)
-	$(CC) $(obj) -o school
+all: $(SRC)
+	$(CC) $(SRC) -o school
 
 clean:
 	rm -r *.o
