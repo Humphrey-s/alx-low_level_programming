@@ -15,13 +15,25 @@ def island_perimeter(grid):
     if len(grid) == 0:
         return 0
 
-    land = 0;
+    land = 0
+    width = 0
+    length = 0
+    p_land = 0
 
     for g in grid:
-        for p in g:
-            if p == 1:
-                land = land + 1
 
-    perimeter = (2 * land) + 2
+        land = 0
+        for i in g:
+            if i == 1:
+                land += 1
+        
+        if land > length:
+            length += land - length
+
+        if land != 0:
+            width = width + 1
+
+
+    perimeter = (width + length) * 2
 
     return perimeter
