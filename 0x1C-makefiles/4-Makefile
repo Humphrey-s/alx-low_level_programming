@@ -1,5 +1,5 @@
 CC = gcc
-SRC = school.c main.c
+SRC = main.c school.c
 CFLAGS = -Wall -Werror -Wextra -pedantic
 OBJ = $(SRC:.c=.o)
 RM = rm -f
