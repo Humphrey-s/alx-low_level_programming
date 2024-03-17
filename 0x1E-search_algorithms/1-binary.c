@@ -68,6 +68,9 @@ int binary_search2(int *array, size_t from, size_t to, int value)
 	if (size == 1 || size == 0)
 		return (from);
 
+	if (array[from] == value)
+		return (binary_search2(array, from, from + 1, value));
+
 	if (size % 2 == 0)
 	{
 		if (array[mid] > value)
