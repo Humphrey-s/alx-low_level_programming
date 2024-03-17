@@ -13,10 +13,10 @@ int binary_search(int *array, size_t size, int value)
 	UNUSED size_t i = 0;
 	size_t mid = 0 + (size / 2);
 
-	searching_in(array, 0, size);
-
 	if (array == NULL)
 		return (-1);
+
+	searching_in(array, 0, size);
 
 	if (size == 1)
 		return (0);
