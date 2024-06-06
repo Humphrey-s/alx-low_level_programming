@@ -1,5 +1,5 @@
 #include "search_algos.h"
-
+#include <stdio.h>
 /**
  * binary_search - searches usin binary search algorithm
  * @array: array
