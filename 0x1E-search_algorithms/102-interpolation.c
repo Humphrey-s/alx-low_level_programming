@@ -72,7 +72,8 @@ size_t get_position(int *array, size_t low, size_t high, int value)
 	 * size_t multiplication = division * (value - array[low]);
 	 * size_t pos = low + multiplication;
 	*/
-	size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
+	size_t pos = low + (((double)(high - low) / (array[high] - array[low]))
+			* (value - array[low]));
 
 	return (pos);
 }
